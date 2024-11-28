@@ -46,7 +46,7 @@ export const ProjectsSection = () => {
   return (
     <div>
       <div className="container">
-        <p>Real-World Results</p>
+        <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">Real-World Results</p>
         <h2>Featured Projects</h2>
         <p>See How I Transformed concepts into engaging digital experiences.</p>
         <div>
