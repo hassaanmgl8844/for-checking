@@ -34,7 +34,7 @@ export const Footer = () => {
                 className="inline-flex items-center gap-1.5"
               >
                 <span className="font-semibold">{link.title}</span>
-                <ArrowUpRightIcon className="size-4"  />
+                <ArrowUpRightIcon className="size-4" />
               </a>
             ))}
           </nav>
@@ -43,3 +43,4 @@ export const Footer = () => {
     </footer>
   );
 };
+// Completed 
