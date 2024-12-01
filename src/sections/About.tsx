@@ -89,7 +89,7 @@ const hobbies = [
 
 export const AboutSection = () => {
   return (
-    <div className="py-20">
+    <div className="py-20 lg:py-28">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
@@ -97,8 +97,8 @@ export const AboutSection = () => {
           description="Learn more About Who I am, What I do, and What Inspires Me."
         />
         <div className="mt-20 flex flex-col gap-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
-            <Card className="h-[320px] md:col-span-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+            <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
                 title="My Reads"
                 description="Explore the Books Shaping My Perspectives."
@@ -108,14 +108,14 @@ export const AboutSection = () => {
               </div>
             </Card>
 
-            <Card className="h-[320px] md:col-span-3">
+            <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="My Toolbox"
                 description="Explore the technologies and tools I use to craft exceptional
                 digital experiences."
                 className=""
               />
-              <ToolboxItems items={toolboxItems} className="mt-6" />
+              <ToolboxItems items={toolboxItems} className="mt-0" />
               <ToolboxItems
                 items={toolboxItems}
                 className="mt-6"
@@ -123,8 +123,8 @@ export const AboutSection = () => {
               />
             </Card>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-            <Card className="h-[320px] p-0 flex flex-col col-span-3">
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8 ">
+            <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Beyond The Code"
                 description="Explore my interests and hobbies beyond the digital realm."
@@ -148,7 +148,7 @@ export const AboutSection = () => {
                 ))}
               </div>
             </Card>
-            <Card className="h-[320px] p-0 relative col-span-2">
+            <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
               <Image
                 src={mapImage}
                 alt="Map Image"
