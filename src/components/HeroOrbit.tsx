@@ -9,6 +9,7 @@ const HeroOrbit = ({
   orbitDuration,
   shouldSpin = false,
   spinDuration,
+  className,
 }: PropsWithChildren<{
   size: number;
   rotation: number;
@@ -16,6 +17,7 @@ const HeroOrbit = ({
   shouldSpin?: boolean;
   spinDuration?: string;
   orbitDuration?: string;
+  className?: string;
 }>) => {
   return (
     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-20">
